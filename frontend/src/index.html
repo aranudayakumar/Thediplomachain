@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<p style="background-image: url('backdrop.jpg');">
+<head>
+    <meta charset="UTF-8">
+    <title>ETH Transfer Demo</title>
+    <style>
+        body {
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0 auto; /* Center content horizontally */
+            padding-top: 60px; /* Add space at the top for the fixed header */
+            font-size: 24px; /* Increase font size */
+        }
+        h1 {
+            font-size: 36px; /* Larger heading font size */
+            margin-bottom: 20px; /* Add space below the heading */
+        }
+        div {
+            margin-bottom: 20px; /* Add space between divs */
+            text-align: center; /* Center text within divs */
+        }
+        label {
+            font-size: 24px; /* Larger label font size */
+        }
+        input, button {
+            font-size: 20px; /* Increase input and button font size */
+            padding: 10px; /* Increase padding for input and button */
+        }
+        /* Center the button */
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Style for the header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #FF0000; /* Red stripe */
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">UW-Madison Portal</div> <!-- University Portal header -->
+
+    <h1>Transfer Diploma</h1> <!-- Larger heading -->
+
+    <div>
+        <label>Student Address:</label>
+        <input id="receiver" type="text">
+    </div>
+
+    <div>
+        <label>Diploma NFT:</label>
+        <input id="amount" type="text">
+    </div>
+
+    <button onclick="transfer()">Transfer</button>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.x/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

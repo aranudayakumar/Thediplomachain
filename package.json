@@ -1,0 +1,15 @@
+{
+    "name": "diplomachain-frontend",
+    "version": "1.0.0",
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.9.3",
+        "gsap": "^3.6.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "web3": "^1.3.6"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+    }
+}
